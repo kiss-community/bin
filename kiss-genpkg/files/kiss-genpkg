@@ -1,0 +1,23 @@
+#!/usr/bin/sh -e
+
+[ -z $1 ] && echo "Provide a package name" && exit 1
+pkg=$1
+path=$(kiss search $pkg)
+rm -rf $pkg
+
+mkdir $pkg
+cd $pkg
+cp $path/version .
+cp $path/depends .
+sed -i '/.* make$/d' ./depends
+
+echo "cp * /" > ./build
+chmod +x ./build
+
+version=$(sed 's/ /-/g' ./version)
+echo "https://s3.wasabisys.com/kiss-bin/${pkg}/${pkg}@${version}.tar.xz" \
+  > ./sources
+
+kiss c
+
+cd ..
