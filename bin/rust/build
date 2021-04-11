@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+cp -r usr "$1/usr"
+cp -r etc "$1/etc"
