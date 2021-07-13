@@ -1,31 +1,31 @@
 |/
-|\ISS                                                      https://k1sslinux.org
+|\ISS Linux                                                https://kisslinux.xyz
 ________________________________________________________________________________
 
 
-Official Binary Package Repository
+Binary Package Repository
 ________________________________________________________________________________
 
 
 This repository contains prebuilt binaries for the more time-consuming packages
-to build from source in the official repositories. 
+to build from source in the kiss-community repositories.
 
 These binaries are distributed as kiss-compliant packages. This means that you
 can simply download the release tarball you want and do kiss i path/to/package
-and kiss will install it for you! 
+and kiss will install it for you!
 
 Alternatively, you can clone this repo and use it in the usual way. The prebuilt
-package is simply downloaded and copies to "$1/usr" during the 'build'. 
+package is simply downloaded and copies to "$1/usr" during the 'build'.
 
 
 Caveats
 ________________________________________________________________________________
 
 * This repository may lag behind the latest version available in the main
-  repositories, especially for frequently updated packages like cmake or nodejs. 
-
-* This repository currently does not include packages in community, but could 
-  potentially be expanded to include them. 
+  repositories, especially for frequently updated packages like cmake or nodejs.
 
 * These packages are all built in a regular KISS chroot release tarball with
-  generic C{XX}FLAGS, built identically to their source-based counterparts. 
+  generic C{XX}FLAGS, built identically to their source-based counterparts.
+
+* These packages are submitted and maintained by members of the community, not
+  Dylan Araps. Trust these packages accordingly.
