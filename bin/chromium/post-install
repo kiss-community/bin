@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+cat << EOF
+NOTE: Built WITHOUT VA-API!
+
+NOTE: 'CONFIG_USER_NS' MUST be set to 'Y' in your kernel configuration for \
+the sandbox to work. If support for user namespaces is not available, the \
+SUID sandbox should be built instead:
+EOF
