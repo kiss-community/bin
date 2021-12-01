@@ -1,8 +1,6 @@
 alsa-lib
 atk
 bzip2
-cairo
-expat
 flac
 fontconfig
 glib
@@ -15,5 +13,4 @@ libxkbcommon
 mesa
 nss
 opus
-pango
 wayland
