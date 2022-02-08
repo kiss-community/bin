@@ -1,8 +1,6 @@
 #!/bin/sh -e
 
 cat << EOF
-NOTE: Built WITHOUT VA-API!
-
 NOTE: 'libudev-zero' must be installed for the udev checks to work.
 
 NOTE: Add the following to your '.profile' for VA-API to work:
